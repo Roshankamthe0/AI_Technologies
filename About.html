@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us-AI Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .left-section {
+            flex: 1;
+            text-align: left;
+        }
+
+        .right-section {
+            flex: 1;
+        }
+
+        .right-section img {
+            width: 370px; 
+            height: 340px; 
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .explore1 h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .row
+        {
+            margin-top: 3rem;
+        }
+       .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.explore1
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+       
+        .btn {
+            display: inline-block;
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #260fba;
+        }
+  
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .left-section, .right-section {
+                flex: unset;
+                width: 100%;
+            }
+
+            .right-section img {
+                width: 100%; 
+                height: auto;
+            }
+        }
+        
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="">AI Technologies</a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                    <!-- <button class="dropdown-toggle">▼</button>
+                    <div class="dropdown">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div> -->
+                </li>
+                <li class="nav-item">
+                    <a href="About.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="service.html">Services</a>
+                    <!-- <button class="dropdown-toggle">▼</button>
+                    <div class="dropdown">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                    </div> -->
+                </li>
+                <li><a href="Career.html">Career</a></li>
+                <li class="nav-item">
+                    <a href="Trainning.html">Trainning</a>
+                    <button class="dropdown-toggle">▼</button>
+                    <div class="dropdown">
+                        <a href="Trainning.html#program1">Summary</a>
+                        <a href="Trainning.html#modules1">Syllabus</a>
+                        <a href="Trainning.html#projects1">Projects</a>
+                        <!-- <a href="#">Instructor</a>
+                        <a href="#">FAQs</a> -->
+                        <a href="Trainning.html#contact1">Query</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="feedback.html">Career</a></li>
+            </ul>
+            <div class="menu" id="tmenu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="section">
+                <div class="left-section">
+                    <h2>Excellence Beyond Expectations</h2>
+                    <h2>Commitment to Quality and Precision</h2>
+                    <h2>Innovating Excellence, Engineering the Future
+                    </h2>
+                    <br>
+                    <p>
+                        AI Technologies (AIT) is at the forefront of engineering innovation, providing world-class design, development, and manufacturing solutions. We pride ourselves on our commitment to precision, quality, and delivering excellence at every step. With a team of highly skilled professionals, we combine technical expertise with creative problem-solving to craft solutions that redefine industry standards.</p>
+                        <br>
+
+                        <p>Our mission is to empower businesses by transforming their ideas into reality through cutting-edge technology and superior craftsmanship. From automotive engineering to advanced manufacturing processes, AIT offers end-to-end solutions tailored to meet the unique needs of our clients.</p>
+                        <br>
+                        
+                        <p>What sets us apart is our unwavering focus on client success. By delivering projects on time, within budget, and beyond expectations, we build lasting partnerships with our customers. At AIT, innovation is not just a goal; it’s a way of life. Together, let’s drive the future of engineering excellence.</p>
+                        <br>
+                    <a href="#" class="btn" onclick="toggleAbout()">Read More</a>
+                </div>
+
+                <div class="right-section">
+                    <img src="about_us1.jpeg" alt="about us">
+                </div>
+            </div>
+
+           
+    <section class="explore1" style="display: none;">
+        <h1> Explore Our Designs</h1>
+        <p>
+            Welcome to the heart of our BIW fixture design solutions. Here, you’ll find a curated selection of our most advanced and reliable designs, created to optimize manufacturing processes. Each fixture is engineered with precision to ensure accuracy, reduce production time, and meet the unique needs of your automotive assembly line.</p> 
+            
+          <p> Browse through our image gallery to explore various fixture configurations, custom solutions, and cutting-edge technologies that can help you achieve seamless production efficiency</p>
+   
+
+<div class="row"> 
+<div class="column">
+<img src="about_us.jpeg" style="width:100%">
+<img src="about_us1.jpeg" style="width:100%">
+<img src="AI Logo.jpeg" style="width:100%">
+<img src="contact-us.gif" style="width:100%">
+<img src="contactus.jpeg" style="width:100%">
+<img src="location.png" style="width:100%">
+<img src="mail.jpg" style="width:100%">
+</div>
+<div class="column">
+<img src="telephone-call.png" style="width:100%">
+<img src="contact-us.gif" style="width:100%">
+<img src="location.png" style="width:100%">
+<img src="about_us1.jpeg" style="width:100%">
+<img src="about_us.jpeg" style="width:100%">
+<img src="AI Logo.jpeg" style="width:100%">
+</div>  
+<div class="column">
+<img src="about_us.jpeg" style="width:100%">
+<img src="about_us1.jpeg" style="width:100%">
+<img src="AI Logo.jpeg" style="width:100%">
+<img src="contact-us.gif" style="width:100%">
+<img src="contactus.jpeg" style="width:100%">
+<img src="location.png" style="width:100%">
+<img src="mail.jpg" style="width:100%">
+</div>
+<div class="column">
+<img src="telephone-call.png" style="width:100%">
+<img src="contact-us.gif" style="width:100%">
+<img src="location.png" style="width:100%">
+<img src="about_us1.jpeg" style="width:100%">
+<img src="about_us.jpeg" style="width:100%">
+<img src="AI Logo.jpeg" style="width:100%">
+</div>  
+</div>
+</section>
+
+</main>
+
+<script>
+    function toggleAbout() {
+        const aboutSection = document.querySelector('.explore1');
+        aboutSection.style.display = aboutSection.style.display === 'block' ? 'none' : 'block';
+    }
+
+</script>
+     <script src="script.js"></script>
+  
+</body>
+</html>
+
