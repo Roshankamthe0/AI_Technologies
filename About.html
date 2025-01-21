@@ -104,22 +104,137 @@
                 height: auto;
             }
         }
-        
+        .slide{
+    height: 250px;
+    width: 400px;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
 
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+img{
+    height: 100%;
+    width:100%;
+    transition: transform 1s;
+    border: 2px solid black;
 }
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+.image-slider{
+    display: grid;
+    place-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+    height: 250px;  
+    width: 100%;
 }
+.image-slider-track{
+    display: flex;
+    width:calc(200px*12);
+    animation: play 40s linear infinite;
+}
+
+@keyframes play{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-250px*6));
+    }
+}
+
+.image-slider::before,
+.image-slider::after{
+    background: linear-gradient(to right,rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
+    content: '';
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+    position: absolute;
+
+    }
+
+    .image-slider::before{
+        left:0;
+        top:0;
+    }
+
+    .image-slider::after{
+        right:0;
+        top:0;
+        background: linear-gradient(to left,rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
+
+    }
+
+    img:hover{
+        transform: translateZ(20px);
+    }
+
+    @media (max-width: 768px) {
+    .image-slider {
+        height: 180px;  /* Adjust height for smaller screens */
+        width: 100%;
+    }
+
+    .image-slider-track {
+        width: calc(150px * 12);  /* Reduce total width */
+        animation: play 30s linear infinite;  /* Speed up animation slightly for smaller screens */
+    }
+
+    .slide {
+        height: 180px;
+        width: 250px;  /* Adjust slide width */
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    @keyframes play {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-250px * 6)); /* Ensure horizontal movement */
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .image-slider {
+        height: 150px;
+    }
+
+    .slide {
+        height: 150px;
+        width: 200px;  /* Further reduce for smaller screens */
+    }
+
+    .slide img {
+        border-radius: 3px;
+    }
+
+    .image-slider-track {
+        width: calc(120px * 12);  /* Adjust track width */
+    }
+
+    @keyframes play {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-200px * 6));
+        }
+    }
+}
+
+    
+
+
     </style>
 </head>
 <body>
@@ -195,7 +310,7 @@
                 </div>
 
                 <div class="right-section">
-                    <img src="about_us1.jpeg" alt="about us">
+                    <img src="images/about_us.jpeg" alt="about us">
                 </div>
             </div>
 
@@ -208,41 +323,38 @@
           <p> Browse through our image gallery to explore various fixture configurations, custom solutions, and cutting-edge technologies that can help you achieve seamless production efficiency</p>
    
 
-<div class="row"> 
-<div class="column">
-<img src="about_us.jpeg" style="width:100%">
-<img src="about_us1.jpeg" style="width:100%">
-<img src="AI Logo.jpeg" style="width:100%">
-<img src="contact-us.gif" style="width:100%">
-<img src="contactus.jpeg" style="width:100%">
-<img src="location.png" style="width:100%">
-<img src="mail.jpg" style="width:100%">
+ 
+<div class="image-slider">
+    <div class="image-slider-track">
+        <div class="slide">      
+<img src="images/1.jpg">
+</div><div class="slide">      
+    <img src="images/2.jpg">
+    </div>
+    <div class="slide">      
+     <img src="images/3.jpg">
+    </div>
+     <div class="slide">      
+   <img src="images/4.jpg">
+     </div>
+  <div class="slide">      
+       <img src="images/5.jpg">
+     </div>
+     <div class="slide">      
+      <img src="images/6.jpg">
+      </div>
+       <div class="slide">      
+        <img src="images/7.jpg">
+      </div>
+       <div class="slide">      
+     <img src="images/8.jpg">
+        </div>
+        <div class="slide">      
+    <img src="images/9.jpg">
+         </div>
 </div>
-<div class="column">
-<img src="telephone-call.png" style="width:100%">
-<img src="contact-us.gif" style="width:100%">
-<img src="location.png" style="width:100%">
-<img src="about_us1.jpeg" style="width:100%">
-<img src="about_us.jpeg" style="width:100%">
-<img src="AI Logo.jpeg" style="width:100%">
-</div>  
-<div class="column">
-<img src="about_us.jpeg" style="width:100%">
-<img src="about_us1.jpeg" style="width:100%">
-<img src="AI Logo.jpeg" style="width:100%">
-<img src="contact-us.gif" style="width:100%">
-<img src="contactus.jpeg" style="width:100%">
-<img src="location.png" style="width:100%">
-<img src="mail.jpg" style="width:100%">
 </div>
-<div class="column">
-<img src="telephone-call.png" style="width:100%">
-<img src="contact-us.gif" style="width:100%">
-<img src="location.png" style="width:100%">
-<img src="about_us1.jpeg" style="width:100%">
-<img src="about_us.jpeg" style="width:100%">
-<img src="AI Logo.jpeg" style="width:100%">
-</div>  
+
 </div>
 </section>
 
