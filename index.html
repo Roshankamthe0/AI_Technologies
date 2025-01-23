@@ -61,15 +61,17 @@
         }
         .image-section img {
             width: 100%;
+            height: 25rem;
             border-radius: 10px;
             display: none;
+            animation:change_image 20s linear infinite;
         }
         .image-section img.active {
             display: block;
         }
-        .dot {
-            height: 15px;
-            width: 15px;
+        /* .dot {
+            height: 0px;
+            width: 0px;
             margin: 0 5px;
             background-color: #bbb;
             border-radius: 50%;
@@ -79,7 +81,7 @@
         }
         .dot.active {
             background-color: #717171;
-        }
+        } */
         main
 {
     max-width: 1200px;
@@ -101,6 +103,10 @@
             }
             .slide {
                 max-width: 100%;
+            }
+            .image-section img
+            {
+                height: 16rem;
             }
             
         }
@@ -156,7 +162,133 @@
         .about ul li {
             margin-bottom: 5px;
         }
+        .network h1 {
+        font-size: 3rem;
+        padding: 20px;
+        margin: 20px 0px;
+    }
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.4px);
+        -webkit-backdrop-filter: blur(7.4px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        margin: auto;
+    }
 
+    .slider-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        animation: scrolling 20s linear infinite;
+    }
+
+    @keyframes scrolling {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .slider-items img {
+        width: 50%;
+        height: 6rem;
+        margin: 20px;
+        object-fit: contain;
+    }
+
+    .hiring {
+        margin-bottom: 60px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    @media (max-width: 768px) {
+        .slider {
+            width: 100%;
+        }
+        .slider-items {
+            gap: 10px;
+        }
+        .slider-items img {
+            width: 100%;
+            height: auto; 
+            margin: 10px;
+        }
+        .hiring {
+            font-size: 1.2rem;
+        }
+    }
+
+    .hiring
+    {
+        margin-bottom: 20px;
+    }
+ 
+
+    .counters {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 200px;
+    }
+
+    .counter-card {
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      width: 150px;
+    }
+
+    .counter-card .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .counter {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .label {
+      font-size: 1rem;
+
+    }
+    @media (max-width: 768px) {
+  .counters {
+    flex-direction: column; 
+    gap: 15px;
+    margin-bottom: 100px; 
+  }
+
+  .counter-card {
+    width: 100%; 
+    max-width: 300px; 
+  }
+
+  .counter-card .icon {
+    font-size: 1.5rem; 
+  }
+
+  .counter {
+    font-size: 2rem;
+  }
+
+  .label {
+    font-size: 0.9rem; 
+  }
+}
     </style>
 </head>
 <body>
@@ -223,9 +355,9 @@
             </div>
             <div class="slide">
                 <div class="image-section">
-                    <img src="about_us.jpeg" class="active">
-                    <img src="about_us1.jpeg">
-                    <img src="AI Logo.jpeg">
+                    <img src="images/10.jpg" class="active">
+                    <img src="images/11.jpg">
+                    <img src="images/12.jpg">
                 </div>
                 <div style="text-align:center">
                     <span class="dot active" onclick="currentSlide(1)"></span>
@@ -258,6 +390,52 @@
             <p>At AIT, we measure our success by the success of your business. Together, we achieve great things.</p>
         
         </section>
+
+        <section class="hiring">
+
+        <h1 class="network">Our network</h1>
+        <div class="slider">
+            <div class="slider-items">
+                <img src="images/force-logo.png"
+                    alt="Force motor">
+                <img src="images/mahindra.png"
+                    alt="machindra">
+                <img src="images/merce.jpeg"
+                    alt="mercedes">
+                <img src="images/maruti.png"
+                    alt="maruti suzuki ">
+                <img src="images/komastu.png"
+                    alt="komastu">
+                <img src="images/bajaj.jpeg" alt="bajaj">
+                <img src="images/damaco.png"
+                    alt="damaco">
+                <img src="images/leanautomation_logo1.png"
+                    alt="lean automation">
+            </section>
+
+            <div class="counters">
+                <div class="counter-card">
+                  <div class="counter" data-target="150">0</div>
+                  <div class="label">Project Completed</div>
+                </div>
+                <div class="counter-card">
+                  <div class="counter" data-target="10">0</div>
+                  <div class="label">Candidate trained</div>
+                </div>
+                <div class="counter-card">
+                  <div class="counter" data-target="50">0</div>
+                  <div class="label">customer Served</div>
+                </div>
+                <div class="counter-card">
+                  <div class="counter" data-target="0">0</div>
+                  <div class="label">Candidate Placed</div>
+                </div>
+              </div>
+            
+
+
+            </div>
+        </div>
     </div>
     </div>
 </main>
@@ -294,6 +472,43 @@
     }
 
     showSlides();
+
+
+    function counterAnimation() {
+      const counters = document.querySelectorAll('.counter');
+
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const speed = Math.ceil(target / 100);
+
+        function updateCount() {
+          if (count < target) {
+            count += speed;
+            if (count > target) count = target;
+            counter.innerText = count;
+            setTimeout(updateCount, 20);
+          }
+        }
+
+        const inView = () => {
+          const rect = counter.getBoundingClientRect();
+          return rect.top <= window.innerHeight && rect.bottom >= 0;
+        };
+
+        window.addEventListener('scroll', () => {
+          if (inView() && counter.innerText === '0') {
+            updateCount();
+          }
+        });
+
+        if (inView() && counter.innerText === '0') {
+          updateCount();
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', counterAnimation);
 </script>
         
      <script src="script.js"></script>
