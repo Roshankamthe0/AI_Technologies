@@ -174,18 +174,18 @@ img{
 
     @media (max-width: 768px) {
     .image-slider {
-        height: 180px;  /* Adjust height for smaller screens */
+        height: 180px;  
         width: 100%;
     }
 
     .image-slider-track {
-        width: calc(150px * 12);  /* Reduce total width */
-        animation: play 30s linear infinite;  /* Speed up animation slightly for smaller screens */
+        width: calc(150px * 12); 
+        animation: play 30s linear infinite;  
     }
 
     .slide {
         height: 180px;
-        width: 250px;  /* Adjust slide width */
+        width: 250px;  
     }
 
     .slide img {
@@ -199,7 +199,7 @@ img{
             transform: translateX(0);
         }
         100% {
-            transform: translateX(calc(-250px * 6)); /* Ensure horizontal movement */
+            transform: translateX(calc(-250px * 6)); 
         }
     }
 }
@@ -211,7 +211,7 @@ img{
 
     .slide {
         height: 150px;
-        width: 200px;  /* Further reduce for smaller screens */
+        width: 200px; 
     }
 
     .slide img {
@@ -219,7 +219,7 @@ img{
     }
 
     .image-slider-track {
-        width: calc(120px * 12);  /* Adjust track width */
+        width: calc(120px * 12);  
     }
 
     @keyframes play {
@@ -232,7 +232,114 @@ img{
     }
 }
 
-    
+.image-slider1 {
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 250px;  
+    width: 100%;
+}
+
+.image-slider-track1 {
+    display: flex;
+    width: calc(200px * 12);
+    animation: play1 40s linear infinite;
+}
+
+@keyframes play1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 14));
+    }
+}
+
+.image-slider1::before,
+.image-slider1::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+    position: absolute;
+}
+
+.image-slider1::before {
+    left: 0;
+    top: 0;
+}
+
+.image-slider1::after {
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.slide1 {
+    height: 250px;
+    width: 400px;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide1 img {
+    height: 100%;
+    width: 250px;
+    transition: transform 1s;
+    border: 2px solid black;
+}
+
+.slide1 img:hover {
+    transform: translateZ(20px);
+}
+
+@media (max-width: 768px) {
+    .image-slider1 {
+        height: 180px;  
+    }
+
+    .image-slider-track1 {
+        width: calc(150px * 12);
+        animation: play1 30s linear infinite;
+    }
+
+    .slide1 {
+        height: 180px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-slider1 {
+        height: 150px;
+    }
+
+    .slide1 {
+        height: 150px;
+        width: 200px;
+    }
+
+    .image-slider-track1 {
+        width: calc(120px * 12);
+    }
+
+    @keyframes play1 {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-200px * 6));
+        }
+    }
+}
+ .image-slider1
+ {
+    margin-top: 40px;
+ }  
 
 
     </style>
@@ -352,6 +459,59 @@ img{
         <div class="slide">      
     <img src="images/9.jpg">
          </div>
+        </div>
+    </div>
+    
+                     <div class="image-slider1">
+                        <div class="image-slider-track1">
+                            <div class="slide1">      
+                                <img src="images/P01.jpg">
+                                </div>
+                                    <div class="slide1">      
+                                     <img src="images/P03.jpg">
+                                    </div>
+                                     <div class="slide1">      
+                                   <img src="images/P04.jpg">
+                                     </div>
+                                  <div class="slide1">      
+                                       <img src="images/P05.jpg">
+                                     </div>
+                                     <div class="slide1">      
+                                      <img src="images/P06.jpg">
+                                      </div>
+                                       <div class="slide1">      
+                                        <img src="images/P07.png">
+                                      </div>
+                                       <div class="slide1">      
+                                     <img src="images/P08.jpg">
+                                        </div>
+                                        <div class="slide1">      
+                                    <img src="images/P09.jpg">
+                                         </div>
+                     <div class="slide1">      
+                        <img src="images/P10.jpg">
+                        </div><div class="slide1">      
+                            <img src="images/P11.jpg">
+                            </div>
+                            <div class="slide1">      
+                             <img src="images/P12.jpg">
+                            </div>
+                             <div class="slide1">      
+                           <img src="images/P13.jpg">
+                             </div>
+                          <div class="slide1">      
+                               <img src="images/P14.jpg">
+                             </div>
+                             <div class="slide1">      
+                              <img src="images/P15.jpg">
+                              </div>
+                               <div class="slide1">      
+                                <img src="images/P16.jpg">
+                              </div>
+                               <div class="slide1">      
+                             <img src="images/P17.jpg">
+                                </div>
+                                
 </div>
 </div>
 
