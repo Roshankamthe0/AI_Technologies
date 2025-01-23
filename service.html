@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <style>
-
+ 
+ 
 
     main {
       position: relative;
@@ -100,7 +101,7 @@
 
     .swiper-pagination-bullet,
     .swiper-pagination-bullet-active {
-      background: #fff;
+      background: none;
     }
 
     .swiper-pagination {
@@ -163,37 +164,38 @@
 
     .swiper-slide--one {
       background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("reardoor.png")
+        url("images/biw\ fixture\ design.webp")
           no-repeat 50% 50% / cover;
+
     }
 
     .swiper-slide--two {
       background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("about_us.jpeg")
+        url("images/biw\ product\ design.webp")
           no-repeat 50% 50% / cover;
     }
 
     .swiper-slide--three {
       background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("about_us1.jpeg")
+      url("images/simulation.webp")
           no-repeat 50% 50% / cover;
     }
 
     .swiper-slide--four {
       background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("About-Us_Top.jpg")
+      url("images/spm.webp")
           no-repeat 50% 50% / cover;
     }
 
     .swiper-slide--five {
       background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("homepage.jpeg")
+        url("images/manufacturing.webp")
           no-repeat 50% 50% / cover;
     }
 
     .swiper-slide--six {
       background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url("reardoor.png")
+      url("images/R&D.webp")
           no-repeat 50% 50% / cover;
     }
 
@@ -222,6 +224,19 @@
     .swiper-3d .swiper-slide-shadow-right {
       background-image: none;
     }
+   
+.slider-controls {
+  text-align: center; 
+  margin-top: 10px;   
+}
+
+.prev-slide, .next-slide {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px; 
+}
+
 
     @media screen and (min-width: 48rem) {
       main {
@@ -308,14 +323,14 @@
                   <div class="swiper-slide swiper-slide--one">
                     <div>
                       <h2>BIW Fixture Design</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic ipsam consequatur, excepturi aliquam odio sunt? Pariatur reprehenderit suscipit quis doloremque alias ut magni, sint voluptate, quidem velit cumque nemo.</p>
+                      <p>We specialize in designing robust and efficient BIW (Body-in-White) fixtures to ensure precise assembly and production processes.</p>
                       <a href="moreinfo.html#mservice1" class="btn" onclick="toggleservice1()">SEE MORE</a> 
                     </div>
                   </div>
                   <div class="swiper-slide swiper-slide--two">
                     <div>
                       <h2>BIW Product Design</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reiciendis eum aut quis nemo esse sunt rem illo minima aliquid corporis labore explicabo dolorem, soluta, iste sit suscipit, libero natus.</p>
+                      <p>Our team provides end-to-end BIW product design solutions to meet the structural and functional requirements of automotive bodies.</p>
                       <a href="moreinfo.html#mservice2" class="btn" onclick="toggleservice2()">SEE MORE</a>
                     </div>
                   </div>
@@ -323,7 +338,7 @@
                   <div class="swiper-slide swiper-slide--three">
                     <div>
                       <h2>Simulation</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic ipsam consequatur, excepturi aliquam odio sunt? Pariatur reprehenderit suscipit quis doloremque alias ut magni, sint voluptate, quidem velit cumque nemo.</p>
+                      <p>Advanced simulation techniques using Process Simulate and Dalmia software to optimize manufacturing processes and identify potential improvements.</p>
                       <a href="moreinfo.html#mservice3" class="btn" onclick="toggleservice3()">SEE MORE</a>
                     </div>
                   </div>
@@ -331,7 +346,7 @@
                   <div class="swiper-slide swiper-slide--four">
                     <div>
                       <h2>Special Purpose Machines</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic ipsam consequatur, excepturi aliquam odio sunt? Pariatur reprehenderit suscipit quis doloremque alias ut magni, sint voluptate, quidem velit cumque nemo.</p>
+                      <p>Custom-designed SPMs tailored to specific manufacturing needs, enhancing productivity and automation.</p>
                       <a href="moreinfo.html#mservice4" class="btn" onclick="toggleservice4()">SEE MORE</a>
                     </div>
                   </div>
@@ -339,7 +354,7 @@
                   <div class="swiper-slide swiper-slide--five">
                     <div>
                       <h2>Manufacturing Engineering</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic ipsam consequatur, excepturi aliquam odio sunt? Pariatur reprehenderit suscipit quis doloremque alias ut magni, sint voluptate, quidem velit cumque nemo.</p>
+                      <p>Providing expertise in optimizing production lines, reducing costs, and improving overall manufacturing efficiency.</p>
                       <a href="moreinfo.html#mservice5" class="btn" onclick="toggleservice5()">SEE MORE</a>
                     </div>
                   </div>
@@ -347,14 +362,14 @@
                   <div class="swiper-slide swiper-slide--six">
                     <div>
                       <h2>R&D Services</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic ipsam consequatur, excepturi aliquam odio sunt? Pariatur reprehenderit suscipit quis doloremque alias ut magni, sint voluptate, quidem velit cumque nemo.</p>
+                      <p>Research and development services aimed at innovation, new product development, and process improvements.</p>
                       <a href="moreinfo.html#mservice6" class="btn" onclick="toggleservice6()">SEE MORE</a>
                     </div>
                   </div>
                   <div class="swiper-slide swiper-slide--seven">
                     <div>
                       <h2>Turn-Key Production System</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reiciendis eum aut quis nemo esse sunt rem illo minima aliquid corporis labore explicabo dolorem, soluta, iste sit suscipit, libero natus.</p>
+                      <p>We deliver complete, ready-to-operate production systems, ensuring seamless integration from design to deployment.</p>
                       <a href="moreinfo.html#mservice7" class="btn" onclick="toggleservice7()">SEE MORE</a>
                     </div>
                   </div>
@@ -362,7 +377,7 @@
                   <div class="swiper-slide swiper-slide--eight">
                     <div>
                       <h2>Reverse Engineering</h2>
-                      <p>Octopuses inhabit various regions of the ocean, including coral reefs, pelagic waters, and the seabed; some live in the intertidal zone and others at abyssal depths.</p>
+                      <p>Our reverse engineering services help in analyzing and recreating existing products for improvement or duplication.</p>
                       <a href="moreinfo.html#mservice8" class="btn" onclick="toggleservice8()">SEE MORE</a>
                     </div>
                   </div>
@@ -370,57 +385,76 @@
                   <div class="swiper-slide swiper-slide--nine">
                     <div>
                       <h2>Staffing and Recruiting</h2>
-                      <p>Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton, five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the head.</p>
+                      <p>We provide recruitment solutions to help businesses find the right talent for engineering and technical roles.</p>
                       <a href="moreinfo.html#mservice9" class="btn" onclick="toggleservice9()">SEE MORE</a>
                     </div>
                   </div>
-          
+                 
                 </div>
+                <div class="slider-controls">
+                  <button class="prev-slide">Previous Slide</button>
+                  <button class="next-slide">Next Slide</button>
+                </div>
+        
+                
                 
                 <div class="swiper-pagination"></div>
               </div>
+              
             </main>
           
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
 <script>
-    var swiper = new Swiper(".swiper", {
-                effect: "coverflow",
-                grabCursor: true,
-                centeredSlides: true,
-                coverflowEffect: {
-                  rotate: 0,
-                  stretch: 0,
-                  depth: 100,
-                  modifier: 3,
-                  slideShadows: true
-                },
-                keyboard: {
-                  enabled: true
-                },
-                mousewheel: {
-                  thresholdDelta: 70
-                },
-                loop: true,
-                pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true
-                },
-                breakpoints: {
-                  640: {
-                    slidesPerView: 2
-                  },
-                  768: {
-                    slidesPerView: 1
-                  },
-                  1024: {
-                    slidesPerView: 2
-                  },
-                  1560: {
-                    slidesPerView: 3
-                  }
-                }
-              });
+  
+ 
+  var swiper = new Swiper(".swiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 3,
+    slideShadows: true
+  },
+  keyboard: {
+    enabled: true
+  },
+  mousewheel: {
+    thresholdDelta: 70
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 1
+    },
+    1024: {
+      slidesPerView: 2
+    },
+    1560: {
+      slidesPerView: 3
+    }
+  }
+});
+
+const prevButton = document.querySelector('.prev-slide');
+const nextButton = document.querySelector('.next-slide');
+prevButton.addEventListener('click', () => {
+  swiper.slidePrev();  
+});
+nextButton.addEventListener('click', () => {
+  swiper.slideNext();  
+});
+
 
     function toggleservice1() {
         const aboutSection = document.querySelector('.service1');
@@ -458,6 +492,7 @@
         const aboutSection = document.querySelector('.service9');
         aboutSection.style.display = aboutSection.style.display === 'block' ? 'none' : 'block';
     }
+    
 </script>
 <script src="script.js"></script>
 
